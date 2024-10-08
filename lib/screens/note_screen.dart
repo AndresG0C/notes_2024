@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:notes_2024/screens/responsable.dart';
 import 'package:notes_2024/screens/widget/custom_textfield.dart';
 import 'package:notes_2024/screens/widget/note_dialog.dart';
 import '../controllers/note_controller.dart';
@@ -23,6 +24,11 @@ class NotesScreen extends StatelessWidget {
             icon: const Icon(Icons.add),
             onPressed: () => _showNoteDialog(context),
           ),
+          IconButton(
+            onPressed: (){
+            Get.to(() => ResponsableScreen());
+          },
+          icon: const Icon(Icons.person_add_alt)),
         ],
       ),
       body: Column(
