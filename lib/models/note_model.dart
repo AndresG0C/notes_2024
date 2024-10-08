@@ -5,12 +5,14 @@ class Note {
   String title;
   String content;
   DateTime date;
+  String responsableId;
 
   Note({
     required this.id,
     required this.title,
     required this.content,
     required this.date,
+    required this.responsableId,
   });
 
   
@@ -20,6 +22,7 @@ class Note {
       title: data['title'],
       content: data['content'],
       date: (data['date'] as Timestamp).toDate(),
+      responsableId: data['responsableId'],
     );
   }
 
@@ -29,6 +32,7 @@ class Note {
       'title': title,
       'content': content,
       'date': date,
+      'responsableId': responsableId,
     };
   }
 

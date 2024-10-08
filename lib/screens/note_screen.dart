@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
+import 'package:notes_2024/controllers/responsable_controller.dart';
 import 'package:notes_2024/screens/responsable.dart';
 import 'package:notes_2024/screens/widget/custom_textfield.dart';
 import 'package:notes_2024/screens/widget/note_dialog.dart';
@@ -9,6 +10,7 @@ import '../models/note_model.dart';
 
 class NotesScreen extends StatelessWidget {
   final NoteController noteController = Get.put(NoteController());
+  final ResponsableController responsableController = Get.put(ResponsableController());
 
   NotesScreen({super.key});
 
